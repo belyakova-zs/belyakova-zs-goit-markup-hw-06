@@ -75,19 +75,75 @@
           <h1 class="hero-title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
+
           <button class="hero-button" type="button" data-modal-open>
             Заказать услугу
           </button>
+        </div>
 
-          <!-- Модальное окно -->
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="close-button" data-modal-close>
-                <svg width="18" height="18">
-                  <use href="./images/sprite.svg#close"></use>
-                </svg>
-              </button>
-            </div>
+        <!-- Модальное окно -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close-button" data-modal-close>
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+
+            <!-- Форма -->
+            <form class="form">
+              <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+              <div class="form-field">
+                <label for="username">Имя</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  minlength="3"
+                  required
+                />
+                <!-- <svg><use href="./images/sprite.svg#personblack"></use></svg> -->
+              </div>
+
+              <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" required />
+              </div>
+
+              <div class="form-field">
+                <label for="email">Почта</label>
+                <input type="email" name="mail" id="mail" required />
+              </div>
+
+              <div class="form-field">
+                <label for="feedback"
+                  >Комментарий
+                  <textarea
+                    name="feedback"
+                    id="feedback"
+                    cols="30"
+                    rows="10"
+                    placeholder="Введите текст..."
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="form">
+                <input
+                  type="checkbox"
+                  name="mailing"
+                  value="mailing"
+                  id="mailing"
+                />
+                <label for="mailing"
+                  >Соглашаюсь с рассылкой и принимаю <a>Условия договора</a>
+                </label>
+              </div>
+
+              <button class="mailing-button" type="submit">Отправить</button>
+            </form>
+            <!-- ------------------------------------ -->
           </div>
         </div>
       </section>
@@ -236,10 +292,7 @@
 
                   <li class="team-list">
                     <a href="" class="team-network-icons">
-                      <svg                      
-                        width="20px"
-                        height="20px"
-                      >
+                      <svg width="20px" height="20px">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -343,7 +396,7 @@
                 src="./images/mixail.jpg"
                 alt="Михаил Ермаков"
                 width="270"
-                height="260px"
+                height="260"
               />
               <div class="team-container">
                 <h3 class="team-title">Михаил Ермаков</h3>
