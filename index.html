@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ДЗ_5</title>
+    <title>ДЗ_6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!--зачем нужны два первые линка с preconnect?-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -95,25 +95,39 @@
               <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
 
               <div class="form-field">
-                <label for="username">Имя</label>
-                <input
-                  type="text"
-                  name="username"
-                  id="username"
-                  minlength="3"
-                  required
-                />
-                <!-- <svg><use href="./images/sprite.svg#personblack"></use></svg> -->
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#personblack"></use>
+                </svg>
+                <label
+                  >Имя
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="username"
+                    minlength="3"
+                    required
+                  />
+                </label>
               </div>
 
               <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" required />
+                <label
+                  >Телефон<input
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    required
+                /></label>
               </div>
 
               <div class="form-field">
-                <label for="email">Почта</label>
-                <input type="email" name="mail" id="mail" required />
+                <label
+                  >Почта<input
+                    class="form-input"
+                    type="email"
+                    name="mail"
+                    required
+                /></label>
               </div>
 
               <div class="form-field">
@@ -137,13 +151,15 @@
                   id="mailing"
                 />
                 <label for="mailing"
-                  >Соглашаюсь с рассылкой и принимаю <a>Условия договора</a>
+                  ><span
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a>Условия договора</a></span
+                  >
                 </label>
               </div>
 
               <button class="mailing-button" type="submit">Отправить</button>
             </form>
-            <!-- ------------------------------------ -->
           </div>
         </div>
       </section>
@@ -549,6 +565,25 @@
             </li>
           </ul>
         </div>
+        <!-- -------------- -->
+
+        <div class="footer-mailing-container">
+          <p class="footer-mailing-title">Подпишитесь на рассылку</p>
+          <input
+            class="footer-mailing"
+            type="text"
+            name="footer-mailing"
+            placeholder="E-mail"
+          />
+          <button class="footer-mailing-button" type="submit">
+            Подписаться
+            <svg class="icon-send" width="24" height="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- ---------------- -->
       </div>
     </footer>
 
