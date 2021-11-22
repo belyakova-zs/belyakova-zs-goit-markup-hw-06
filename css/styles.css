@@ -977,15 +977,6 @@ textarea {
   position: absolute;
 }
 
-.form-checkbox:checked + .mailing-checkmark {
-  /* border-color: var(--accent-color); */
-  /* background-color: var(--accent-color); */
-  background-image: url("../images/galochka.svg");
-  /* fill: var(--white-color); */
-  /* background-size: contain;
-  background-origin: border-box; */
-}
-
 .mailing-checkmark {
   display: inline-block;
   width: 16px;
@@ -993,6 +984,24 @@ textarea {
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 7px;
+}
+
+.form-checkbox-icon {
+  display: inline-flex;
+  margin-right: 8px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+  background-color: var(--bg-color);
+  fill: var(--bg-color);
+}
+
+.form-checkbox:checked + .mailing-checkmark {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url("../images/checkmark.svg");
+
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .form-mailing-link {
