@@ -98,7 +98,7 @@
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/sprite.svg#personblack"></use>
                 </svg>
-                <label
+                <label class="form-field-label"
                   >Имя
                   <input
                     class="form-input"
@@ -111,7 +111,10 @@
               </div>
 
               <div class="form-field">
-                <label
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#phoneblack"></use>
+                </svg>
+                <label class="form-field-label"
                   >Телефон<input
                     class="form-input"
                     type="tel"
@@ -121,7 +124,10 @@
               </div>
 
               <div class="form-field">
-                <label
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#emailblack"></use>
+                </svg>
+                <label class="form-field-label"
                   >Почта<input
                     class="form-input"
                     type="email"
@@ -131,9 +137,10 @@
               </div>
 
               <div class="form-field">
-                <label for="feedback"
+                <label class="form-field-label" for="feedback"
                   >Комментарий
                   <textarea
+                    class="form-field-textarea"
                     name="feedback"
                     id="feedback"
                     cols="30"
@@ -143,17 +150,25 @@
                 </label>
               </div>
 
-              <div class="form">
+              <div class="form-mailing-text">
                 <input
+                  class="form-checkbox"
                   type="checkbox"
                   name="mailing"
                   value="mailing"
                   id="mailing"
                 />
-                <label for="mailing"
-                  ><span
+                <label for="mailing">
+                  <!-- <svg class="mailing-checkmark" width="16" height="15">
+                    <use href="./images/sprite.svg#checkmark"></use>
+                  </svg> -->
+
+                  <span class="mailing-checkmark"></span>
+                  <span
                     >Соглашаюсь с рассылкой и принимаю
-                    <a>Условия договора</a></span
+                    <a href="" class="form-mailing-link">
+                      Условия договора
+                    </a></span
                   >
                 </label>
               </div>
@@ -565,7 +580,6 @@
             </li>
           </ul>
         </div>
-        <!-- -------------- -->
 
         <div class="footer-mailing-container">
           <p class="footer-mailing-title">Подпишитесь на рассылку</p>
@@ -582,11 +596,8 @@
             </svg>
           </button>
         </div>
-
-        <!-- ---------------- -->
       </div>
     </footer>
-
     <!-- Скрипт -->
     <script src="./js/modal.js"></script>
   </body>
