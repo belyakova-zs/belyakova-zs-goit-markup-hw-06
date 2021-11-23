@@ -271,7 +271,6 @@ ul {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--second-accent-color);
   background-color: #188ce8;
 }
 
@@ -1007,8 +1006,7 @@ textarea {
 .form-checkbox:checked + .mailing-checkmark {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url("../images/white-checkmark.svg");
-  fill: var(--white-color);
+  background-image: url("../images/icon_check.svg");
 
   background-size: contain;
   background-origin: border-box;
