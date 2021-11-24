@@ -94,10 +94,10 @@
             <form class="form">
               <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
 
+              <!-- поместите иконку под инпут и сможете к ней обратиться, 
+                чтобы изменять цвет 
+                в состоянии фокуса инпута -->
               <div class="form-field">
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./images/sprite.svg#personblack"></use>
-                </svg>
                 <label class="form-field-label"
                   >Имя
                   <input
@@ -107,33 +107,38 @@
                     minlength="3"
                     required
                   />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#personblack"></use>
+                  </svg>
                 </label>
               </div>
 
               <div class="form-field">
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./images/sprite.svg#phoneblack"></use>
-                </svg>
                 <label class="form-field-label"
                   >Телефон<input
                     class="form-input"
                     type="tel"
                     name="tel"
                     required
-                /></label>
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#phoneblack"></use>
+                  </svg>
+                </label>
               </div>
 
               <div class="form-field">
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./images/sprite.svg#emailblack"></use>
-                </svg>
                 <label class="form-field-label"
                   >Почта<input
                     class="form-input"
                     type="email"
                     name="mail"
                     required
-                /></label>
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#emailblack"></use>
+                  </svg>
+                </label>
               </div>
 
               <div class="form-field">
@@ -578,7 +583,7 @@
           </ul>
         </div>
 
-        <div class="footer-mailing-container">
+        <form class="footer-mailing-container">
           <p class="footer-mailing-title">Подпишитесь на рассылку</p>
           <input
             class="footer-mailing"
@@ -592,7 +597,7 @@
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </footer>
     <!-- Скрипт -->
